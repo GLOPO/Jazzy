@@ -7,12 +7,13 @@ import facebook from '../assets/facebook.png'
 import twitter from '../assets/twitter.png'
 import instagram from '../assets/instagram.png'
 import youtube from '../assets/youtube.png'
+import '../styles/footer.css'
 
 const Footer = () => {
   return (
     <>
       <main className='bg-black p-sm-5'>
-        <div className='container text-white py-5 text-center text-lg-start'>
+        <div className='container text-white py-4 text-center text-lg-start'>
           <div className='d-flex justify-content-between flex-column flex-lg-row '>
             <div className='d-flex flex-column-reverse flex-lg-row gap-5'>
               <div className='d-lg-flex  gap-lg-2'>
@@ -32,22 +33,10 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className='d-flex flex-column flex-lg-row gap-5 '>
-              <div className='d-flex align-items-center border rounded-2 w-75 mx-auto'>
-                <img src={apple} alt="iOS-Logo" className='w-25 h-25'/>
-                <p className='d-flex flex-column '>
-                  <span>DownLoad on the</span>
-                  <span className='fw-bold fs-6'>APP STORE</span>
-                </p>
-              </div>
+            <div className='d-flex flex-column flex-lg-row gap-3 gap-lg-5 '>
+              <img src={playstore} alt="iOS-logo" className='download mx-auto'/>
 
-              <div className='d-flex align-items-center border rounded-2 w-75 mx-auto'>
-                <img src={playstore} alt="playstore-logo" className='w-25 h-25'/>
-                <p className='d-flex flex-column'>
-                  <span>Get it on</span>
-                  <span className='fw-bold fs-6'>GOOGLE PLAY</span>
-                </p>
-              </div>
+              <img src={apple} alt="google-playstore-logo" className='download mx-auto'/>
             </div>
           </div>
 
@@ -59,11 +48,12 @@ const Footer = () => {
 
           <div>
             <h3 className='pb-3'>FOLLOW US</h3>
-            <div className='d-flex w-75 mx '>
-              <img src={facebook} alt="facebook-loge" />
-              <img src={twitter} alt="twitter-logo" />
-              <img src={instagram} alt="instagram-logo" />
-              <img src={youtube} alt="youtube-logo" />
+                {/* logos   */}
+            <div className='d-flex gap-2 justify-content-center justify-content-lg-start'>
+              <img src={facebook} alt="facebook-loge" className='logos'/>
+              <img src={twitter} alt="twitter-logo" className='logos'/>
+              <img src={instagram} alt="instagram-logo" className='logos'/>
+              <img src={youtube} alt="youtube-logo" className='logos'/>
             </div>
           </div>
         </div>

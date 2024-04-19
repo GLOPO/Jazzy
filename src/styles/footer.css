@@ -1,0 +1,16 @@
+.download {
+  width: 50%;
+}
+
+.logos {
+  width: 5%;
+}
+@media(max-width: 426px) {
+  .logos {
+    width: 10%;
+  }
+  .logo-div {
+    margin: 0 auto;
+
+  }
+}

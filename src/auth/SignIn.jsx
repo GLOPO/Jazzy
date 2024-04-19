@@ -70,7 +70,7 @@ const SignIn = () => {
               </div>
             ))}
 
-            <Link className='text-decoration-none' to='#'>Reset Password</Link>
+            <Link className='text-decoration-none d-none d-lg-block' to='#'>Reset Password</Link>
             </div>
 
             <button className='btn btn-danger fs-3 text-white w-100'> Sign In</button>
