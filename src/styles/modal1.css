@@ -1,0 +1,13 @@
+.button {
+  width: 100%;
+}
+@media(min-width: 1024px) {
+  .button{
+    width: 50%;
+  }
+}
+
+.mode {
+  background: rgba(249, 242, 242, 1);
+
+}

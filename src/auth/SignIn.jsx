@@ -4,6 +4,8 @@ import logo from '../assets/logo.svg'
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import { useForm } from "react-hook-form"
+import { FaEye } from "react-icons/fa";
+import { FaEyeSlash } from "react-icons/fa";
 
 const SignIn = () => {
   const [isReveal, setIsReveal] = useState(false)
@@ -53,7 +55,7 @@ const SignIn = () => {
               <Form.Control type={isReveal ? 'text' : 'password'} placeholder="Password" className='border border-3 rounded-3 position-relative' {...register("password" ,{ required: true })}/>
               {errors.password && <span className='text-danger fw-bold'>This field is required</span>}
               <p className='position-absolute top-0 end-0 mt-3 me-2' role='button' onClick={handleToggle}>
-                {isReveal ? 'hide' : 'show'}
+                {isReveal ? <FaEyeSlash /> : <FaEye />}
               </p>
             </FloatingLabel>
 
