@@ -58,6 +58,8 @@ const Footer = () => {
           </div>
         </div>
       </main>
+
+      <p className='fw-bold container text-center my-2'>JJB Concepts. Developed by our Digital  LLC</p>
     </>
   )
 }
